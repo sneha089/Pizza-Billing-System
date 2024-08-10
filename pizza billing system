@@ -1,0 +1,23 @@
+size=input("what type of pizza do you want(S/M/L)")
+bill=0
+if size=='S' or size=='s':
+    bill=bill+100
+    print("please pay 100 rupees")
+elif size=='M' or size=='m':
+    bill=bill+200
+    print("please pay 200 rupees")
+else:
+    bill=bill+300
+    print("please pay 300 rupees")
+peppericon=input("Do you want to add peppricon (Y/N)?")
+if peppericon=='Y' or peppericon=='y':
+    if size=='S' or size=='s':
+        bill=bill+30
+    elif size=='M' or size=='m':
+        bill=bill+50
+    else:
+        bill=bill+20
+extra_cheese=input("Do you want to add extra cheese (Y/N)?")
+if extra_cheese=='Y' or extra_cheese=='y':
+    bill=bill+20
+print(f"Total bill is {bill}")    
